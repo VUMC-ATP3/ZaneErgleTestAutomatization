@@ -2,7 +2,7 @@ package mavenTestNGHomework;
 
 public class Calculator {
 
-    public int sum(int a, int b){
+    public double sum(double a, double b){
         return a + b;
     }
 
@@ -10,11 +10,11 @@ public class Calculator {
         return a / b;
     }
 
-    public int subtract(int a, int b){
+    public double subtract(double a, double b){
         return a - b;
     }
 
-    public int multiply(int a, int b){
+    public double multiply(double a, double b){
         return a * b;
     }
 }

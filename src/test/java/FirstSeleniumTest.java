@@ -17,7 +17,6 @@ public class FirstSeleniumTest {
         String actualTitle = chromeBrowser.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle);
         chromeBrowser.quit();
-
     }
 
     @AfterMethod

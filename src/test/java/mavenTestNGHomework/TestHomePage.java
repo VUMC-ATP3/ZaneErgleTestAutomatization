@@ -3,6 +3,7 @@ package mavenTestNGHomework;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class TestHomePage {
@@ -25,8 +26,7 @@ public class TestHomePage {
         WebDriver chromeBrowser = new ChromeDriver();
         chromeBrowser.navigate().to("https://twitter.com/");
         chromeBrowser.manage().window().maximize();
-//        String expectedTitle = "Twitter. It’s what’s happening / Twitter";
-        String expectedTitle = "Twitter. It’s what’s happening / Twitter3";
+        String expectedTitle = "Twitter";
         String actualTitle = chromeBrowser.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle);
         chromeBrowser.quit();

@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f348f1de-98ff-4c88-8bce-35bb1d05543f" name="Changes" comment="Test Automation classwork">
+    <list default="true" id="f348f1de-98ff-4c88-8bce-35bb1d05543f" name="Changes" comment="Test Automation Homework almost finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classroom6/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classroom6/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculatorTestClassroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstSeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstSeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mavenTestNGHomework/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mavenTestNGHomework/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mavenTestNGHomework/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mavenTestNGHomework/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mavenTestNGHomework/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mavenTestNGHomework/TestHomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +33,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AtRmDDAwifQZGeB4qwUq9mrMnw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,20 +56,7 @@
       <recent name="mavenTestNGHomework" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestHomePage.testPageTitle1">
-    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classroom6.Example" />
-      <module name="ZaneErgleTestAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classroom6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.CalculatorTest (1)">
     <configuration name="MavenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mavenTestNGHomework.MavenTest" />
       <module name="ZaneErgleTestAutomation" />
@@ -74,19 +70,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstSeleniumTest.testPageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ZaneErgleTestAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mavenTestNGHomework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mavenTestNGHomework" />
+      <option name="MAIN_CLASS_NAME" value="mavenTestNGHomework.CalculatorTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTestClassroom (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ZaneErgleTestAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mavenTestNGHomework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mavenTestNGHomework" />
+      <option name="MAIN_CLASS_NAME" value="mavenTestNGHomework.CalculatorTestClassroom" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTestClassroom" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ZaneErgleTestAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstSeleniumTest" />
-      <option name="METHOD_NAME" value="testPageTitle" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTestClassroom" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomePage.testPageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ZaneErgleTestAutomation" />
       <extension name="coverage">
         <pattern>
@@ -96,26 +125,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="mavenTestNGHomework" />
       <option name="MAIN_CLASS_NAME" value="mavenTestNGHomework.TestHomePage" />
-      <option name="METHOD_NAME" value="testPageTitle" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestHomePage.testPageTitle1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ZaneErgleTestAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mavenTestNGHomework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mavenTestNGHomework" />
-      <option name="MAIN_CLASS_NAME" value="mavenTestNGHomework.TestHomePage" />
-      <option name="METHOD_NAME" value="testPageTitle1" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -124,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestHomePage.testPageTitle1" />
+        <item itemvalue="TestNG.CalculatorTest (1)" />
+        <item itemvalue="TestNG.TestHomePage" />
         <item itemvalue="Application.MavenTest" />
-        <item itemvalue="TestNG.TestHomePage.testPageTitle" />
-        <item itemvalue="Application.Example" />
-        <item itemvalue="TestNG.FirstSeleniumTest.testPageTitle" />
+        <item itemvalue="TestNG.CalculatorTestClassroom (1)" />
+        <item itemvalue="TestNG.CalculatorTestClassroom" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656262866571</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test Automation Homework">
+      <created>1656265391536</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656265391536</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +240,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test Automation classwork" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Automation classwork" />
+    <MESSAGE value="Test Automation Homework" />
+    <MESSAGE value="Test Automation Homework almost finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Automation Homework almost finished" />
   </component>
 </project>
