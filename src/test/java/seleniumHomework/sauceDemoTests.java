@@ -63,6 +63,35 @@ public class sauceDemoTests {
         System.out.println("You have successfully navigated back to " + inventoryPage.getPageTitleText().getText() + " page");
     }
 
+    @Test
+    public void scenario2() throws InterruptedException {
+        driver.get(SOUCEDEMO_URL);
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("standard_user", "secret_sauce");
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.getAddToChartButton().click();
+
+        ChartPage chartPage = new ChartPage(driver);
+        Assert.assertEquals(chartPage.getChartPageTitleText().getText(), "YOUR CART");
+        chartPage.getCheckoutButton().click();
+
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        Assert.assertEquals(checkoutPage.getCheckoutPageTitleText().getText(),"CHECKOUT: YOUR INFORMATION");
+        checkoutPage.checkout("", "", "");
+        checkoutPage.getCheckoutButton().click();
+        Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: First Name is required" );
+        checkoutPage.checkout("zane", "", "");
+        checkoutPage.getCheckoutButton().click();
+        Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: Last Name is required" );
+        checkoutPage.checkout("Zane", "Ergle", "");
+        checkoutPage.getCheckoutButton().click();
+        Assert.assertEquals(checkoutPage.getErrorMessage().getText(), "Error: Postal Code is required" );
+        checkoutPage.checkout("Zane", "Ergle", "LV 3401");
+        checkoutPage.getCheckoutButton().click();
+    }
+
     @AfterMethod
     public void closingBrowser(){
         driver.quit();

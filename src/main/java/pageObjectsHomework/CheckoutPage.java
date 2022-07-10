@@ -17,6 +17,7 @@ public class CheckoutPage {
     private By lastNameInputField = By.id("last-name");
     private By postalCodeInputField = By.id("postal-code");
     private By checkoutButton = By.id("continue");
+    private By errorMessage = By.cssSelector("h3[data-test='error']");
 
     public void checkout(String name, String lastName, String zipcode){
         getNameInputField().sendKeys(name);
@@ -43,15 +44,8 @@ public class CheckoutPage {
     public WebElement getCheckoutButton(){
         return driver.findElement(checkoutButton);
     }
+
+    public WebElement getErrorMessage(){
+        return driver.findElement(errorMessage);
+    }
 }
-
-
-//        WebElement nameInputField = driver.findElement(By.id("first-name"));
-//        nameInputField.sendKeys("Zane");
-//        WebElement lastNameInputField = driver.findElement(By.id("last-name"));
-//        lastNameInputField.sendKeys("Ergle");
-//        WebElement postalCodeInputField = driver.findElement(By.id("postal-code"));
-//        postalCodeInputField.sendKeys("LV-3401");
-//
-//        WebElement continueButton = driver.findElement(By.id("continue"));
-//        continueButton.click();
